@@ -1,0 +1,39 @@
+/* Inheritance of width and height */
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+.div-border {
+	border: 1px solid black;
+	margin: 1%;
+}
+
+/* Set border none gallery division and make the contained elements become relative to its positionning */
+#gallery-images {
+	position: relative;
+	border: none;
+}
+/* Set the image to absolute but stay relative to the parent div (#gallery-images) */
+#overlay-image {
+	position: absolute;
+	top: 10%;
+	left: 2%;
+}
+
+
+
+
+/* CSS is hierarchiral, therefore the priority of CSS rules overloading other goes from top (less priority) to bottom (higher priority) */
+
+/* --------------- Smartphone view ------------ */
+@media only screen and (max-width : 480px) {
+
+}
+/* -------------- End Smartphone view --------- */
+
+/* -----------Tablet View----------- */ 
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+
+}
